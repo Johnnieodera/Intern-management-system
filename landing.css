@@ -1,0 +1,141 @@
+* { /*  *selector applies the enclosed styles to every single element on the page. */
+    margin: 0; /*Removes the default space (margin) around elements */
+    padding: 0; /*Removes the default space (padding) inside elements 
+    -  Setting this to 0 ensures no extra space inside elements unless you specifically add it.*/
+    box-sizing: border-box; /* Changes how the width and height of elements are calculated
+     - With border-box, the width and height include padding and borders, not just the content. This makes it easier to control the size of elements.  */
+} /*Enclose the style rules for the selector. */
+
+body /* This selector targets the <body> element of the HTML document.*/
+{
+    font-family: Arial, sans-serif; /* Sets the font used for the text within the <body> element.
+    - Arial is the primary font.*/
+    line-height: 1.6; /*Controls the spacing between lines of text. */
+    color: #333; /* Sets the color of the text.*/
+}
+
+.navbar /*This selector targets any HTML element with the class navbar. */
+ {
+    background: #333; /* Sets the background color of the .navbar element.*/
+    color: #fff; /*Sets the text color inside the .navbar element.*/
+    padding: 1rem 0; /* Adds padding (space) inside the .navbar element.*/
+}
+
+.container /*This selector targets any HTML element with the class container*/
+{
+    display: flex; /*Sets the layout model for the .container element to flexbox, 
+     Flexbox is a powerful layout tool that allows for easy alignment and distribution of space among items within the container.*/
+    justify-content: space-between; /*Defines how the child elements of the .container are aligned horizontally within the flex container.*/
+    align-items: center; /*ensures that the child elements are centered along the vertical axis of the flex container.*/
+    max-width: 1200px; /* Limits the maximum width of the .container to 1200 pixels.
+     ensure that the content stays within a manageable width for readability.*/
+    margin: 0 auto; /* Centers the .container horizontally within its parent element.*/
+    padding: 0 1rem; /*Adds padding inside the .container element.*/
+}
+
+.logo /*This selector targets any HTML element with the class logo.*/
+ {
+    font-size: 1.5rem; /* Sets the size of the text within the .logo element.*/
+}
+
+nav ul /* This selector targets any <ul> (unordered list) element that is a descendant of a <nav> (navigation) element.*/
+{
+    list-style: none; /*Removes the default bullet points on the list will no longer have the default dots or numbers, creating a clean, unstyled list.*/
+    display: flex; /*Flexbox allows for more flexible and responsive layouts.
+    This makes it easier to create horizontal navigation menus.*/
+}
+
+nav ul li /* This selector targets any <li> (list item) element that is a descendant of a <ul> (unordered list) within a <nav> (navigation) element. */
+ {
+    margin-left: 1rem; /*Adds space to the left side of each <li> element.*/
+}
+
+nav ul li a /*This selector targets any <a> (anchor/link) element that is a descendant of a <li> (list item) inside a <ul> (unordered list) within a <nav> (navigation) element. In simpler terms, it styles the links within your navigation menu.
+*/
+ {
+    color: #fff; /* Sets the text color of the links to white*/
+    text-decoration: none; /*: Removes the default underline from the links.*/
+    padding: 0.5rem 1rem; /* Adds space inside the link elements.*/
+    transition: background 0.3s ease; /*Adds a smooth transition effect when the background of the link changes.
+    */
+}
+
+nav ul li a:hover /*This selector targets any <a> (anchor/link) element that is a descendant of a <li> (list item) inside a <ul> (unordered list) within a <nav> (navigation) element when the user hovers over the link with their mouse. The :hover pseudo-class applies styles only when the user interacts with the element by hovering over it.
+*/
+ {
+    background: #575757; /*Changes the background color of the link when it is hovered over.*/
+    border-radius: 5px; /*Rounds the corners of the link's background when it is hovered over.*/
+}
+
+.hero /*This selector targets an element with the class hero, typically used to style a prominent section at the top of a webpage, often called a "hero section."*/
+ {
+    display: flex; /* Applies Flexbox layout to the .hero element.*/
+    justify-content: space-between; /* Aligns the child elements of the .hero container with space between them.*/
+    align-items: center; /*Vertically centers the child elements within the .hero container.*/
+    background-color: #333; /* Dark background color */
+    height: 100vh; /*100vh stands for 100% of the viewport height, meaning the .hero section will take up the full height of the browser window.
+    */
+    color: #fff; /*Sets the text color within the .hero section to white.*/
+    text-align: left; /*Aligns the text inside the .hero section to the left*/
+    padding: 0 1rem; /*Adds horizontal padding inside the .hero section.*/
+}
+
+.hero-content 
+ {
+    display: flex;
+    justify-content: space-between; /*This property distributes the child elements (like text and images) within the .hero-content container with space between them. */
+    align-items: center; /*This vertically aligns the child elements to the center of the container, ensuring that all items are evenly centered along the cross-axis*/
+    width: 100%; /*This makes the .hero-content container take up the full width of its parent container, ensuring that the elements inside it are spread across the entire horizontal space.*/
+}
+
+.hero-text {
+    max-width: 50%; /* Limits the maximum width of the element to 50% of the width of its parent container.*/
+}
+
+.hero h1 
+{
+    font-size: 3rem; /* Sets the size of the text in the <h1> heading to be three times the base font size of the root element.*/
+    margin-bottom: 0.5rem; /*Adds space below the <h1> heading.*/
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-image img /**/
+ {
+    max-width: 100%; /*Ensures that the image will not exceed the width of its container.*/
+    border-radius: 10px; /*Rounds the corners of the image.*/
+}
+
+.btn {
+    padding: 0.75rem 1.5rem; /* Adds space inside the button around the text.*/
+    background: #ff6f61; /* Sets the background color of the button.*/
+    color: #fff; /*Sets the color of the text inside the button.*/
+    text-decoration: none; /* Removes any text decoration from the button.*/
+    border-radius: 5px; /*Rounds the corners of the button.*/
+    transition: background 0.3s ease; /*Creates a smooth transition effect when the background color changes*/
+}
+
+.btn:hover {
+    background: #ff3b2f; /* Changes the background color of the button when the user hovers over it.*/
+}
+
+.about {
+    padding: 2rem 1rem; /* Adds space inside the .about element around its content*/
+    text-align: center; /* Centers the text inside the .about element. */
+    background: #f4f4f4; /*Sets the background color of the .about element*/
+}
+
+.about h2 {
+    font-size: 2rem; /*Sets the size of the font for the <h2> element.*/
+    margin-bottom: 1rem; /*This margin creates a gap between the heading and the content that follows it, improving readability and ensuring that the heading does not appear too cramped*/
+}
+
+.footer {
+    padding: 1rem; /*This creates space between the content inside the .footer and its edges, making the content look less cramped and improving readability.*/
+    text-align: center; /* This creates a balanced, symmetrical appearance, which is common in footers for a cleaner and more organized look.*/
+    background: #333; /*This color makes the footer stand out from the rest of the page and provides a clear visual boundary for the footer section.*/
+    color: #fff; /* White text on a dark background improves readability and creates a striking contrast, making the text easily readable against the dark gray background.*/
+}
